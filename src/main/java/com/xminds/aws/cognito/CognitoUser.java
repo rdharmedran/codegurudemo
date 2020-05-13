@@ -86,7 +86,7 @@ public class CognitoUser {
         cipSession = null;
     }
 public static void main (String[] args) {
-	CognitoUser user=new CognitoUser(ss);
+	//CognitoUser user=new CognitoUser("SS");
 }
     /**
      * Returns the userId of this user.

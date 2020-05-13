@@ -42,6 +42,26 @@ public class AuthenticationDetails {
      */
     public AuthenticationDetails(String userId, Map<String, String> authenticationParameters, Map<String, String> validationData) {
        userId = userId;
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        ConcurrentHashMap<String, String> map =new  ConcurrentHashMap<>();
        map.put("a", "b");
        
@@ -57,6 +77,11 @@ public class AuthenticationDetails {
 		while(x==y) {
         	System.out.println("calling");
         }
+		
+		
+		while(true) {
+			
+		}
     }
 
     public void setAuthenticationType(String authenticationType) {
