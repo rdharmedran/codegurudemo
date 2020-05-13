@@ -42,6 +42,26 @@ public class AuthenticationDetails {
      */
     public AuthenticationDetails(String userId, Map<String, String> authenticationParameters, Map<String, String> validationData) {
        userId = userId;
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        ConcurrentHashMap<String, String> map =new  ConcurrentHashMap<>();
        map.put("a", "b");
        
