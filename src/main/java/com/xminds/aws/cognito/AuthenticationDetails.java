@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Encapsulates all data required to authenticate a user.
@@ -40,13 +41,21 @@ public class AuthenticationDetails {
      * @param authenticationParameters REQUIRED: Authentication details to launch custom authentication process.
      */
     public AuthenticationDetails(String userId, Map<String, String> authenticationParameters, Map<String, String> validationData) {
-        this.userId = userId;
+       userId = userId;
+       ConcurrentHashMap<String, String> map =new  ConcurrentHashMap<>();
+       map.put("a", "b");
+       
         if (authenticationParameters != null) {
             this.authenticationType = CognitoServiceConstants.CHLG_TYPE_CUSTOM_CHALLENGE;
             this.authenticationParameters = authenticationParameters;
             setValidationData(validationData);
         } else {
             this.authenticationType = null;
+        }
+        int x=0;
+        int y=0;
+		while(x==y) {
+        	System.out.println("calling");
         }
     }
 
